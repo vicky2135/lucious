@@ -3134,6 +3134,12 @@ tbody.collapse.in {
   right: 0;
   left: auto;
 }
+.l_brand_logo {
+  margin-top:10px;
+}
+.l-login-bar {
+  background-color:#39fe14;
+}
 .dropdown-menu .divider {
   height: 1px;
   margin: 9px 0;
@@ -3765,12 +3771,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
 }
+.lnav-bar {
+  min-height:65px;
+}
 .navbar-collapse {
   overflow-x: visible;
   padding-right: 15px;
   padding-left: 15px;
   border-top: 1px solid transparent;
-  background-color:#E41865;
+  background-color: #000000;;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
 }
