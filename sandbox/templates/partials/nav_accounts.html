@@ -14,10 +14,9 @@
 
     <div class="lnav-bar navbar-collapse account-collapse collapse navbar-fixed-top">
         <div class="container-fluid">
-            <div class="l_brand_logo">
+            <div class="l_brand_logo navbar-left">
                 {% include "partials/brand.html" %}
             </div>
-
             <ul class="l-login-bar nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
                     <li>
@@ -40,6 +39,11 @@
                     <li><a id="login_link" href="{% url 'customer:login' %}"><i class="icon-signin"></i> {% trans "Login or register" %}</a></li>
                 {% endif %}
             </ul>
+
+            <div class="pull-right cart_in_nav_bar">
+                {# Mini-basket wrapped in a block so some templates can now display it #}
+                {% block mini_basket %}{% include "partials/mini_basket.html" %}{% endblock %}
+            </div>
         </div>
     </div>
 </div>

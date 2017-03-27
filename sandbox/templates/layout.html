@@ -23,12 +23,6 @@
 
     {# Site logo/title, mini-basket, browse dropdown and searchbox #}
     <header class="header container-fluid">
-        <div class="page_inner">
-            <div class="row">
-                {# Mini-basket wrapped in a block so some templates can now display it #}
-                {% block mini_basket %}{% include "partials/mini_basket.html" %}{% endblock %}
-            </div>
-        </div>
         {% block navigation %}
             {% include "partials/nav_primary.html" %}
         {% endblock %}
