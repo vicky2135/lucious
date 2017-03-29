@@ -104,6 +104,12 @@ var oscar = (function(o, $) {
 
     o.page = {
         init: function() {
+
+            // corousel
+            $('.carousel').carousel({
+              interval: 2000;
+            });
+
             // Scroll to sections
             $('.top_page a').click(function(e) {
                 var href = $(this).attr('href');
