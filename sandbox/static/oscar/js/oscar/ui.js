@@ -107,7 +107,7 @@ var oscar = (function(o, $) {
 
             // corousel
             $('.carousel').carousel({
-              interval: 2000;
+              interval: 2000
             });
 
             // Scroll to sections
@@ -118,8 +118,18 @@ var oscar = (function(o, $) {
                 }, 500);
                 e.preventDefault();
             });
+
             // Tooltips
             $('[rel="tooltip"]').tooltip();
+
+            $('.thumbnail').hover(
+            function(){
+                $(this).find('.caption').slideDown(250); //.fadeIn(250)
+            },
+            function(){
+                $(this).find('.caption').slideUp(250); //.fadeOut(205)
+            }
+        );
         }
     };
 
@@ -322,6 +332,7 @@ var oscar = (function(o, $) {
                     'autoclose': true,
                     'language': o.datetimepickers.options.languageCode
                 };
+
                 $times = $(el).find('[data-oscarWidget="time"]').not('.no-widget-init').not('.no-widget-init *')
                 $times.each(function(ind, ele) {
                     var $ele = $(ele),

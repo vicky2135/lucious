@@ -3744,6 +3744,72 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-bottom-color: #fff;
   }
 }
+
+.homepage_mid{
+  position: relative;
+  width: 50%;
+  padding:2px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.lucious-button {
+  background-color: #47D59E;
+  border-radius:0px;
+  color: #272B38;
+}
+.lucious-pink {
+  background-color: #F61067;
+  color: #272B38;
+  border-radius: 0px;
+}
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fd6d6d;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.homepage_mid:hover .overlay1 {
+  width: 100%;
+}
+.homepage_mid:hover .overlay2 {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .tab-content > .tab-pane {
   display: none;
 }
@@ -3770,6 +3836,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-header {
     float: left;
   }
+}
+.login_signup_button {
+  background-color: #47D59E;
+  border-radius:0px;
 }
 .lnav-bar {
   min-height:65px;
